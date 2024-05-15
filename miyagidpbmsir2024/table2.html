@@ -200,13 +200,13 @@ function makeBMSTable(info, mark, order) {
         	}
         } else {
         	if(info[i].name_diff != "" && info[i].name_diff != null) {
-	        $("<td width='15%'>" + info[i].name_diff + "</td>").appendTo(str);
+	        $("<td width='17%'>" + info[i].name_diff + "</td>").appendTo(str);
         	} else {
-	        $("<td width='15%'></td>").appendTo(str);
+	        $("<td width='17%'></td>").appendTo(str);
         	}
         }
         // 選曲者
-        $("<td width='14%'>" + info[i].selecter + "</div></td>").appendTo(str);
+        $("<td width='12%'>" + info[i].selecter + "</div></td>").appendTo(str);
         str.appendTo(obj);
         count++;
     }
