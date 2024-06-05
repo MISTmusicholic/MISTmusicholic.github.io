@@ -160,12 +160,12 @@ function makeBMSTable(info, mark, order) {
         // レベル表記
         $("<td align='center' width='5%'>" + mark + x + "</td>").appendTo(str);
         // 譜面難易度
-        $("<td align='center' width='10%'>" + info[i].level2 + "</div></td>").appendTo(str);
+        $("<td align='center' width='9%'>" + info[i].level2 + "</div></td>").appendTo(str);
 　　　　// 譜面画像
 　　　　$("<td width='1%' akign='center'><a href='http://www.ribbit.xyz/bms/score/view?p=1&md5=" + info[i].md5 + "' target='_blank'>■</a></td>").appendTo(str);
 
         // タイトル
-        $("<td width='30%'>" + "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+        $("<td width='29%'>" + "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
         // アーティスト
         var astr = "";
         if(info[i].url != "" && info[i].url != null) {
@@ -190,7 +190,7 @@ function makeBMSTable(info, mark, order) {
         		astr += "<br />(" + info[i].name_pack + ")";
         	}
         }
-        $("<td width='25%'>" + astr + "</td>").appendTo(str);
+        $("<td width='28%'>" + astr + "</td>").appendTo(str);
         // 差分
         if(info[i].url_diff != "" && info[i].url_diff != null) {
         	if(info[i].name_diff != "" && info[i].name_diff != null) {
